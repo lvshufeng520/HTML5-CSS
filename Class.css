@@ -7,12 +7,15 @@
     font-weight: bold;
 
 }
-#one1{
-    color: red;
+.one1{
+    margin-top: 2px;
 }
 .text_red{
     color: red;
 }
 #ww{
     width: 40px;
+}
+legend{
+    color: red;
 }
