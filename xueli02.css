@@ -12,6 +12,7 @@
     border: 2px solid #eaa33c;
     margin-top: 8px;
     margin-left: 8px;
+    outline: none;
 }
 #sou{
     width:140px;
@@ -19,7 +20,9 @@
     background-color: #ebebeb;
     border: 1px solid #989898;
     text-align: center;
-    color: #949494;
+    color: #808080;
+    cursor: pointer;
+    outline: none;
 }
 .one{
     margin-top:0px;
@@ -46,6 +49,8 @@
     text-align: center;
     line-height: 16px;
     float: right;
+    cursor: pointer;
+    margin-top: 10px;
     
 }
 .aoo{

@@ -21,20 +21,26 @@
 <script>
     function output(){
         var data = document.getElementById("tt").value;
+        var tt = document.getElementById("tt");
         var time = new Date().getTime();
-        localStorage.setItem(time,data);
+        if(data == ""){
+            alert("请输入商品名称！");
+        }else{
+            localStorage.setItem(time,data);
 
-        var word = document.getElementById("msg");
-        var result = '<span class="little">';
-        for(var i=0;i<localStorage.length;i++){
-            var key = localStorage.key(i);
-            var value = localStorage.getItem(key);
-            var date = new Date();
-            date.setTime(key);
+            var word = document.getElementById("msg");
+            var result = '<span class="little">';
+            for(var i=0;i<localStorage.length;i++){
+                var key = localStorage.key(i);
+                var value = localStorage.getItem(key);
+                var date = new Date();
+                date.setTime(key);
+            }
+            result += value;
+            result +='</span>';
+            word.innerHTML += result;
         }
-        result += value;
-        result +='</span>';
-        word.innerHTML += result;
+        document.getElementById("tt").value = "";
     }
     function clean(){
         var msg = document.getElementById("msg");
