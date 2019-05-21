@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+/*-----------------整体的大的div--------------------*/      
+
+/*-----------------背景图--------------------*/
+        #small{
+            width: 378px;
+            height: 245px;
+            background: url(zhanqiao.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            transition: 0.5s;
+            z-index: 1;
+            
+        }
+        #shadow{
+            width: 378px;
+            height: 245px;
+            background-color: black;
+            position: absolute;
+            bottom: 245px;
+            opacity: 0;
+            transition: 0.5s;
+           
+        }
+        .little:hover #shadow{
+            opacity: 0.3;
+            transition: 0.5s;
+        }
+        .orange{
+            width: 56px;
+            height: 26px;
+            background-color: #fd7546;
+            position: relative;
+            bottom: 26px;
+            transition:0.5s ;
+            z-index: 100; 
+        }
+        .orange p{
+            font-size: 12px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 26px;
+        }
+        #aa{
+            width: 378px;
+            height: 298px;
+            background-color: #ffffff;
+            position: relative;
+            bottom: 26px;
+            transition:0.5s ;       
+        }
+        .little:hover #aa{
+            bottom: 100px;
+            transition:0.5s ; 
+        }
+        .little:hover #small{
+            transform: scale(1.2,1.2);
+            transition: 0.5s;
+
+        }
+        .little:hover .orange{
+            bottom: 100px;
+            transition:0.5s ; 
+
+        }
+        .little:hover p:nth-child(3){
+            opacity: 1;
+            transition: 0.5s;
+        }
+        #cover{
+            width: 504px;
+            height: 704px;
+            /* background-color: #7eeb99; */
+            position: absolute;
+            top: 0px;
+            z-index: 2;
+
+                      
+        }
+        .little{
+            width: 378px;
+            height: 438px;
+            background-color: rgba(220, 38, 38, 0.2);
+            position: absolute;
+            /* border: 3px solid red; */
+
+        }
+        .a{
+            width: 380px;
+            height: 262px;
+            background-color: #ffffff;
+            border-top: 2px solid rgb(150, 149, 148);
+            position: absolute;
+            top: 440px;
+            z-index: 101;
+        }
+        .b{
+            width: 122px;
+            height: 442px;
+            background-color: #ffffff;
+            /* position: absolute;
+            left: 379px; */
+            position: absolute;
+            left: 377px;
+            border-left: 2px solid rgb(150, 149, 148);
+            z-index: 100;
+        }
+        .date{
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+            background-color: #fd7546;
+            position: absolute; 
+            left: 307px;
+            top: 20px;
+            z-index: 101;                     
+        }
+        .date p{
+            color: #fefefe;
+            text-align: center;
+            padding-top: 10px;
+            font-weight: bold;
+        } 
+        .AA{
+            font-size: 18px;
+            color: #fd7546;
+            margin-left: 20px;
+            margin-top: 8px;            
+        }   
+        h2{
+            padding-top: 10px;
+            padding-left: 20px;
+        } 
+        .word{
+            color: black;
+            position: absolute;
+            top: 407px;
+            left: 29px;
+            font-size: 12px;
+            color: #adb1ae; 
+            z-index: 101;           
+        } 
+        #left{
+            
+            height: 438px;  
+            position: absolute;
+            /* border: 2px solid rgb(168, 166, 166);   */
+            border: 2px solid rgb(150, 149, 148);
+            z-index: 101;        
+        }
+        #top{
+            width: 378px;
+            position: absolute;
+            border-top: 2px solid rgb(150, 149, 148); 
+            z-index: 101;
+        }
+        .bb{
+            color: #858a91;
+            margin-left: 20px;
+            line-height: 25px;
+            opacity: 0;
+            transition: 0.2s;
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="cover">
+        <div class="date">
+            <p>15<br>五月</p>
+        </div>
+        
+        
+        <div class="little">
+            
+            <div id="small">
+               
+            </div>
+            <div id="shadow">
+
+            </div>
+            <div class="orange">
+                <p>照片</p>
+            </div>           
+            <div id="aa">
+                <h2>青岛栈桥</h2>
+                <p class="AA">国家AAAA级旅游景区</p>  
+                <p class="bb">青岛栈桥是青岛海滨风景区的景点之一，是国
+                    <br>务院于1982年首批公布的国家级风景名胜区。
+                    <br>青岛栈桥位于游人如织的青岛中山路南端，桥
+                    <br>身从海岸探入如弯月般的青岛湾深处。桥身供
+                    <br>游人参观并在此停靠旅游船，由此乘船可看海
+                    <br>上青岛</p>              
+            </div>
+        
+        </div>
+
+        <div class="word">
+            <p>10分钟前 &nbsp 123评论</p>            
+        </div>
+        <div id="top"></div>
+        <div id="left"></div>
+        <div class="a"></div>
+        <div class="b"></div>
+
+
+
+    </div>
+
+    
+</body>
+</html>
